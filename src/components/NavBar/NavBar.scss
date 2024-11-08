@@ -1,0 +1,115 @@
+@import '../../utils/variables.scss';
+
+.navbar {
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-family: $font-primary;
+  padding: 1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-logo img {
+  height: 4rem;
+}
+
+// Navbar links
+.navbar-links {
+  display: flex;
+  gap: 3rem;
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-family: $font-primary;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+}
+
+// Hamburger menu button
+.navbar-toggle {
+  display: none;
+  margin-right: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: $secondary-color;
+    position: relative;
+    transition: all 0.3s;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 25px;
+      height: 3px;
+      background-color: $secondary-color;
+      position: absolute;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .navbar{
+    padding: 0.3rem 1rem;
+    .navbar-logo img {
+      height: 3rem;
+    }
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $tertiary-color;
+      padding: 1rem 0;
+      gap: 2rem;
+      
+      a{
+        margin-left: 1.5rem;
+        font-size: 0.8rem;
+        font-size: 0.7rem;
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .navbar-toggle {
+      display: block;
+    }
+  }
+}

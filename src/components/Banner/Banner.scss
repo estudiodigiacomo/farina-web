@@ -1,0 +1,136 @@
+@import "../../utils/variables.scss";
+
+.banner-home {
+  width: 100%;
+  position: relative;
+  height: auto;
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .banner-content {
+    position: absolute;
+    font-family: $font-primary;
+    width: 80%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+
+    p {
+      font-size: 33px;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      text-shadow: 4px 4px 6px black;
+      font-style: italic;
+    }
+
+    .btn-more {
+      border: $primary-color solid 1px;
+      border-radius: 50px;
+      width: 20rem;
+      height: 1.4rem;
+      margin: 1rem auto;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        background-color: lighten(#ffffff41, 10%);
+      }
+
+      a {
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}
+
+
+// Responsive
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-home {
+    .banner-content {
+      width: 90%;
+      top: 70%;
+      left: 50%;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    .btn-more {
+      width: 15rem;
+      height: 1.4rem;
+      margin: 1rem auto;
+      text-align: center;
+
+      a {
+        font-size: 0.7rem;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .banner-home {
+    p {
+      font-size: 20px;
+    }
+
+    .btn-more {
+      width: 8rem;
+      height: 1.3rem;
+      margin: 1rem auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-home {
+    .banner-content {
+      width: 90%;
+      top: 60%;
+      left: 50%;
+
+      p {
+        font-size: 15px;
+      }
+
+      .btn-more {
+        width: 6rem;
+        height: 1.1rem;
+        margin: 0.5rem auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+}

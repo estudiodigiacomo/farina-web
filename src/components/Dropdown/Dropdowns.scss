@@ -1,0 +1,87 @@
+@import "../../utils/variables.scss";
+
+.dropdown-list {
+    .dropdown-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $secondary-color;
+    font-size: 15px;
+    font-family: $font-primary;
+    font-weight: bold;
+    margin: 1rem;
+
+    .dropdown-title {
+        margin-right: 10px;
+    }
+
+    .dropdown-icon {
+        font-size: 16px;
+        color: $secondary-color;
+        transition: transform 0.3s ease; // Transición suave para rotar el ícono
+    }
+
+    &.open .dropdown-icon {
+        transform: rotate(180deg); // Rotación suave cuando está abierto
+    }
+    }
+
+    // Contenido del dropdown
+    .dropdown-content {
+    max-height: 0; // Altura inicial cerrada
+    overflow: hidden; // Oculta contenido cuando está cerrado
+    transition: max-height 0.4s ease; // Transición suave para abrir/cerrar
+    font-family: $font-primary;
+    padding: 0 10px; // Espaciado horizontal
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.8;
+    position: relative; // Evita que afecte a otros elementos
+    z-index: 1; // Asegura que el contenido esté encima
+
+    &.open {
+        max-height: 1000px; // Altura suficiente para mostrar el contenido completo
+    }
+
+    li {
+        margin: 5px 8px;
+        display: flex;
+        align-items: center;
+
+        &:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        margin-right: 10px;
+        }
+    }
+    }
+
+    // Reserva espacio para evitar el movimiento de la página
+    &.open {
+    margin-bottom: 20px; // Ajusta según el contenido desplegado
+    }
+}
+
+// Pantallas grandes (≥ 769px)
+@media (min-width: 769px) {
+    .dropdown-list {
+        margin: 2rem 0rem 0rem 7rem;
+        .dropdown-header {
+            font-size: 19px;
+        }
+
+        .dropdown-content {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+}

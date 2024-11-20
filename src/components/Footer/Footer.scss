@@ -1,0 +1,56 @@
+@import "../../utils/variables.scss";
+
+.footer {
+    background-color: $background-color-footer;
+    padding: 1.7rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .image,
+    .description,
+    .legals {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: $font-primary;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: $primary-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit; 
+        font-family: $font-primary;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+            color: $tertiary-color;
+        }
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .footer {
+    .image,
+    .description,
+    .legals {
+        flex: 1 1 25%;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+}
+}
+
+@media (min-width: 1024px) {
+    .footer {
+    justify-content:center;
+    gap: 0.3rem;
+    }
+}
+

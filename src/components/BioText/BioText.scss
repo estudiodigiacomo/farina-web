@@ -1,0 +1,41 @@
+@import "../../utils/variables.scss";
+
+.title-bio{
+    margin-top: 1.4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: $font-tertiary;
+    color: $tertiary-color;
+    font-weight: 600;
+}
+
+.text-body{
+    font-size: 0.9rem;
+    margin: 0.8rem;
+    font-family: $font-primary;
+}
+
+// Pantallas grandes (≥ 769px)
+@media (min-width: 769px) {
+    .title-bio{
+        margin-top: 1.4rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: $font-tertiary;
+        color: $tertiary-color;
+        font-weight: 600;
+    }
+    
+    .text-body{
+        font-size: 0.9rem;
+        margin: 1rem 6rem 1rem 6rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .text-body{
+        font-size: 1rem;
+        margin: 1rem 8rem 1rem 8rem;
+    }
+}

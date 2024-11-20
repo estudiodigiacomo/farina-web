@@ -1,0 +1,95 @@
+@import "../../utils/variables.scss";
+
+.title-contact{
+    font-family: $font-tertiary;
+    color: $tertiary-color;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.contact-page{
+    background-color: $tertiary-color;
+    margin: 1rem;
+    width: auto;
+    border-radius: 10px;
+
+    .contact-section{
+        padding: 1rem 0rem 0.5rem 1rem;
+        margin: 1rem;
+
+        .title{
+            font-family: $font-primary;
+            color: $primary-color;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            align-items: center; 
+            gap: 0.5rem;
+            }
+
+            .icon {
+            font-size: 1rem;
+            color: $secondary-color;
+            margin-left: 1rem;
+        }
+
+        .number-link, .email_link, .data-days, .data-location{
+            font-family: $font-primary;
+            color: $primary-color;
+            display: flex;
+            text-decoration: none;
+            margin: 0.5rem;
+            justify-content: center;
+        }
+    }
+}
+
+
+// Pantallas grandes (≥ 769px)
+@media (min-width: 769px) {
+    .title-contact{
+        margin-bottom: 1rem;
+    }
+    .contact-page{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin: 0 auto; 
+        width: 90%;
+        height: 10rem;
+        align-items: flex-start; 
+        
+        .contact-section{
+            .title{
+                text-align: start;
+                margin-bottom: 1rem;
+            }
+            .number-link, .email_link, .data-days, .data-location{
+                text-align: start;
+                margin: 0rem;
+                justify-content:flex-start;
+                margin-left: 0.5rem;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0; 
+                    height: 100%; 
+                    width: 2px;
+                    background-color: $primary-color; 
+                    margin-left: -0.5rem; 
+                }
+
+                padding-left: 0.5rem;
+                        }
+        }
+        
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+}

@@ -31,23 +31,25 @@ const carouselImages = [
 
 return (
     <div className="gallery-and-carousel">
-    {/* Galería */}
-    <div className="image-gallery">
-        {galleryImages.map((image, index) => (
-        <div key={index} className="image-item">
-            <img src={image.src} alt={image.alt} />
+        {/* Galería */}
+        <div className="image-gallery">
+            {galleryImages.map((image, index) => (
+            <div key={index} className="image-item">
+                <img src={image.src} alt={image.alt} />
+            </div>
+            ))}
         </div>
-        ))}
-    </div>
 
-    {/* Carrusel */}
-    <Carousel className="carrousel-cert">
-        {carouselImages.map((image, index) => (
-        <Carousel.Item key={index}>
-            <img className="d-block w-100" src={image.src} alt={image.alt} />
-        </Carousel.Item>
-        ))}
-    </Carousel>
+        {/* Carrusel */}
+        <div className="carrousel-content">
+            <Carousel className="carrousel-cert">
+                {carouselImages.map((image, index) => (
+                <Carousel.Item className="carrousel-item" key={index}>
+                    <img className="d-block w-100" src={image.src} alt={image.alt} />
+                </Carousel.Item>
+                ))}
+            </Carousel>
+        </div>
     </div>
 );
 };

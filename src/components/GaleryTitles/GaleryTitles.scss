@@ -21,16 +21,28 @@
     }
     }
 
-    .carrousel-cert img {
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-        width: 80%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px; 
-        }   
-}
+    .carrousel-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px;
 
+        .carousel-control-prev-icon {
+            background-color: rgb(0, 0, 0);
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.146a.5.5 0 0 1 0 .708L6.207 7l5.147 5.146a.5.5 0 0 1-.708.708l-5.5-5.5a.5.5 0 0 1 0-.708l5.5-5.5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+            mask-size: cover;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.146a.5.5 0 0 1 0 .708L6.207 7l5.147 5.146a.5.5 0 0 1-.708.708l-5.5-5.5a.5.5 0 0 1 0-.708l5.5-5.5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+        }
+        
+        .carousel-control-next-icon {
+            background-color: rgb(0, 0, 0);
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.146a.5.5 0 0 1 .708 0l5.5 5.5a.5.5 0 0 1 0 .708l-5.5 5.5a.5.5 0 0 1-.708-.708L9.793 7 4.646 1.854a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            mask-size: cover;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.146a.5.5 0 0 1 .708 0l5.5 5.5a.5.5 0 0 1 0 .708l-5.5 5.5a.5.5 0 0 1-.708-.708L9.793 7 4.646 1.854a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+        }
+    }
+}
 
 @media (min-width: 769px) {
     .gallery-and-carousel {
@@ -47,5 +59,17 @@
                     }
             }
         }
-    } 
+
+        .carrousel-cert {
+            width: 70%; 
+            max-width: 700px;
+            max-height: 500px;
+            overflow: hidden; 
+        }
+    
+        .carrousel-item img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

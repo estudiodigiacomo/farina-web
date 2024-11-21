@@ -5,6 +5,8 @@ import Footer from "./components/Footer/Footer";
 import './utils/variables.scss'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Bio from './pages/Bio/Bio'
+import WhatsAppButton from "./components/WhatsAppBtn/WhatsAppBtn";
+import Practice from "./pages/Practice/Practice";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/bio" element={<Bio/>}/>
+        <Route path="/practice" element={<Practice/>}/>
       </Routes>
+      <WhatsAppButton />
       <Footer/>
     </BrowserRouter>
   )

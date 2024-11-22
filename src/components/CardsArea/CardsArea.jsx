@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getCards } from "../../services/areaPracticeService.js";
+import ImageCarousel from '../../components/Carrousel/Carrousel'
 import "./CardsArea.scss";
 
 const CardsArea = () => {
@@ -39,6 +40,7 @@ const CardsArea = () => {
     return (
         <>
             <p className="title_areas">Áreas de Práctica</p>
+            <ImageCarousel/>
             <div className="cards-container">
                 {cards.map((card) => (
                     <div 

@@ -17,23 +17,26 @@ export const createNotice = async (title, sections, imageUrl) => {
   }
 };
 
-
-  
-  // Obtener todas las noticias
-  export const getNotice = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(db, "news"));
-      const notice = [];
-      querySnapshot.forEach((doc) => {
-        notice.push({ id: doc.id, ...doc.data() });
+export const getNotice = async () => {
+  try {
+    const querySnapshot = await getDocs(collection(db, "news"));
+    const notice = [];
+    querySnapshot.forEach((doc) => {
+      const data = doc.data();
+      console.log("Documento obtenido:", data); // <-- Inspeccionar cada documento
+      notice.push({
+        id: doc.id,
+        ...data,
+        section: Array.isArray(data.section) ? data.section : [], // Garantiza que `section` sea un arreglo
       });
-      print('Hola',notice)
-      return notice;
-    } catch (error) {
-      console.error("Error al obtener las noticias:", error);
-      throw error;
-    }
-  }; 
+    });
+    return notice;
+  } catch (error) {
+    console.error("Error al obtener las noticias:", error);
+    throw error;
+  }
+};
+
   
   // Obtener las 4 noticias más recientes
   export const getLatestNews = async () => {

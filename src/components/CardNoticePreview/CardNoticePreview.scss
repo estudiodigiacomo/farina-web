@@ -81,13 +81,21 @@
   .notice-preview {
     justify-content: space-between;
 
-    .content-text {
-      .title-preview {
-        font-size: 1.4rem;
+    .content-preview{
+      .content-text {
+        .title-preview {
+          font-size: 1.4rem;
+          
+        }
+    
+        .text-preview {
+          font-size: 0.9rem;
+        }
+        
       }
-  
-      .text-preview {
-        font-size: 0.9rem;
+      &:hover {
+        transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Añade sombra */
       }
     }
   }

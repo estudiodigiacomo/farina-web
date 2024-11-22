@@ -1,7 +1,7 @@
 @import "../../utils/variables.scss";
 
 .title-bio{
-    margin-top: 1.4rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: 1.8rem;
     font-family: $font-tertiary;
@@ -18,7 +18,7 @@
 // Pantallas grandes (≥ 769px)
 @media (min-width: 769px) {
     .title-bio{
-        margin-top: 1.4rem;
+        margin-top: 1rem;
         text-align: center;
         font-size: 1.8rem;
         font-family: $font-tertiary;
@@ -36,6 +36,6 @@
 @media (min-width: 1024px) {
     .text-body{
         font-size: 1rem;
-        margin: 1rem 8rem 1rem 8rem;
+        margin: 2rem 8rem 1rem 8rem;
     }
 }

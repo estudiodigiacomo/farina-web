@@ -31,19 +31,22 @@
     }
 
     .btn-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border: $primary-color solid 1px;
       border-radius: 50px;
       width: 20rem;
-      height: 1.4rem;
-      margin: 1rem auto;
+      height: 2rem;
+      margin: 1rem auto; 
       text-align: center;
       transition: transform 0.3s ease, background-color 0.3s ease;
-
+    
       &:hover {
         transform: translateY(-5px);
         background-color: lighten(#ffffff41, 10%);
       }
-
+    
       a {
         font-weight: 600;
         letter-spacing: 0.1rem;
@@ -53,7 +56,7 @@
         font-size: 0.8rem;
         transition: background-color 0.3s;
       }
-    }
+    }    
   }
 }
 
@@ -109,6 +112,7 @@
 
 @media (max-width: 576px) {
   .banner-home {
+    margin-bottom: 0;
     .banner-content {
       width: 90%;
       top: 60%;

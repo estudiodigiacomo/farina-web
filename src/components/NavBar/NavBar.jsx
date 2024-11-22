@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { HiMenu } from "react-icons/hi";
 import "./NavBar.scss";
 
 const Navbar = () => {
@@ -17,7 +18,6 @@ const Navbar = () => {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Redirigir al Home y luego desplazarte
       window.location.href = "/#contact";
     }
     setIsOpen(false);
@@ -26,11 +26,14 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        {/* Logo */}
         <div className="navbar-logo">
-          <Link to="/">
+          <Link to="/" onClick={() => setIsOpen(false)}>
             <img src="src/assets/luciana-farina.webp" alt="logo" />
           </Link>
         </div>
+
+        {/* Links */}
         <div className={`navbar-links ${isOpen ? "active" : ""}`}>
           <Link to="/bio" onClick={() => setIsOpen(false)}>
             Bío
@@ -45,8 +48,9 @@ const Navbar = () => {
             Contacto
           </button>
         </div>
+
         <button className="navbar-toggle" onClick={toggleMenu}>
-          <span className="hamburger"></span>
+          <HiMenu/>
         </button>
       </div>
     </nav>

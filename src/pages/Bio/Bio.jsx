@@ -1,5 +1,4 @@
 import React from 'react'
-import ImageCarousel from '../../components/Carrousel/Carrousel'
 import BioText from '../../components/BioText/BioText'
 import ProfessionalDropdown from '../../components/Dropdown/Dropdown'
 import GalleryAndCarousel from '../../components/GaleryTitles/GaleryTitles'
@@ -65,7 +64,6 @@ const Bio = () => {
   
   return (
     <>
-      <ImageCarousel/>
       <BioText/>
       <ProfessionalDropdown title="Formación Profesional" items={professionalItems} />
       <ProfessionalDropdown title="Cursos de Capacitacion" items={courseItems} />

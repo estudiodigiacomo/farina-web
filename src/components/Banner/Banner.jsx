@@ -9,7 +9,7 @@ const Banner = () => {
             <p> Asesoramiento Jurídico de Empresas</p>
             <p>Derecho Agrario, Agro Ambiental y Agro Alimentario </p>
             <div className='btn-more'>
-                <a href='*'>conocer más</a>
+                <a href='/bio'>conocer más</a>
             </div>
         </div>
     </div>

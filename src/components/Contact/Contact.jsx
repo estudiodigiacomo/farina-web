@@ -44,7 +44,7 @@ return (
             target="_blank"
             rel="noopener noreferrer"
         >
-            Tres Arroyos, Provincia de Buenos Aires
+            Tres Arroyos, Provincia de Buenos Aires, Humberto 1º 460
         </a>
         <a
             href="https://www.google.com/maps?q=-38.37626121962469,-60.266417090762"
@@ -52,7 +52,7 @@ return (
             target="_blank"
             rel="noopener noreferrer"
         >
-            Humberto 1º 460
+            Cdad. Autónoma de Buenos Aires, José Andrés Pacheco de Melo 2870 - Piso 3B
         </a>
         </div>
     </div>

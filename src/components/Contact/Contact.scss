@@ -63,9 +63,9 @@
         .contact-section{
             .title{
                 text-align: start;
-                margin-bottom: 1rem;
+                margin-bottom: 0.3rem;
             }
-            .number-link, .email_link, .data-days, .data-location{
+            .email_link, .data-days, .data-location{
                 text-align: start;
                 margin: 0rem;
                 justify-content:flex-start;
@@ -81,13 +81,17 @@
                     background-color: $primary-color; 
                     margin-left: -0.5rem; 
                 }
+            }
+            .number-link{
+                width: 10rem;
+            }
 
                 padding-left: 0.5rem;
                         }
         }
         
     }
-}
+
 
 
 @media (min-width: 1024px) {

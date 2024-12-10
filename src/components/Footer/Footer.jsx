@@ -7,7 +7,7 @@ const Footer = () => {
     <>
     <div className="footer">
         <div className="image_footer">
-            <img src="src/assets/logo_footer.png" alt="logo footer"/>
+            <img src="https://storage.googleapis.com/farina_img/logo_footer.png" alt="logo footer"/>
         </div>
         <div className="description">
             <p className="description">Asesoramiento Jurídico de Empresas, Derecho Agrario, Agro Ambiental y Agro Alimentario </p>

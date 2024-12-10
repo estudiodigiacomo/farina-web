@@ -4,7 +4,7 @@ import "./Banner.scss";
 const Banner = () => {
   return (
     <div className='banner-home'>
-        <img src="src\assets\banner-home.webp" className='banner-image' alt="banner"/>
+        <img src="https://storage.googleapis.com/farina_img/banner-home.webp" className='banner-image' alt="banner"/>
         <div className='banner-content'>
             <p> Asesoramiento Jurídico de Empresas</p>
             <p>Derecho Agrario, Agro Ambiental y Agro Alimentario </p>

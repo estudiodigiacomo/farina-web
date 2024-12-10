@@ -4,11 +4,11 @@ import './Carrousel.scss';
 
 const ImageCarousel = () => {
     const images = [
-        { src: "src/assets/banner2.webp"},
-        { src: "src/assets/banner1.webp"},
-        { src: "src/assets/banner6.webp"},
-        { src: "src/assets/banner5.webp"},
-        { src: "src/assets/banner4.webp"},
+        { src: "https://storage.googleapis.com/farina_img/banner1.webp"},
+        { src: "https://storage.googleapis.com/farina_img/banner2.webp"},
+        { src: "https://storage.googleapis.com/farina_img/banner4.webp"},
+        { src: "https://storage.googleapis.com/farina_img/banner5.webp"},
+        { src: "https://storage.googleapis.com/farina_img/banner6.webp"},
     ];
 
     return (

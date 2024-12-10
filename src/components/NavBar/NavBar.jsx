@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="navbar-logo">
           <Link to="/" onClick={() => setIsOpen(false)}>
-            <img src="src/assets/luciana-farina.webp" alt="logo" />
+            <img src="https://storage.googleapis.com/farina_img/luciana-farina.webp" alt="logo" />
           </Link>
         </div>
 

@@ -4,29 +4,29 @@ import "./GaleryTitles.scss";
 
 const GalleryAndCarousel = () => {
 const galleryImages = [
-    { src: "src/assets/certificado (5).webp", alt: "Image 1" },
-    { src: "src/assets/certificado (2).webp", alt: "Image 2" },
-    { src: "src/assets/certificado (3).webp", alt: "Image 3" },
-    { src: "src/assets/certificado (6).webp", alt: "Image 4" },
-    { src: "src/assets/certificado (4).webp", alt: "Image 5" },
-    { src: "src/assets/certificado (1).webp", alt: "Image 6" },
+    { src: "https://storage.googleapis.com/farina_img/certificado%20(5).webp", alt: "Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/certificado%20(2).webp", alt: "Image 2" },
+    { src: "https://storage.googleapis.com/farina_img/certificado%20(3).webp", alt: "Image 3" },
+    { src: "https://storage.googleapis.com/farina_img/certificado%20(6).webp", alt: "Image 4" },
+    { src: "https://storage.googleapis.com/farina_img/certificado%20(1).webp", alt: "Image 5" },
+    { src: "https://storage.googleapis.com/farina_img/certificado%20(4).webp", alt: "Image 6" },
 ];
 
 const carouselImages = [
-    { src: "src/assets/img/cert-sec/cert-sec (1).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (2).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (3).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (4).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (5).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (6).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (7).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (8).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (9).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (10).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (11).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (12).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (13).webp", alt: "Carousel Image 1" },
-    { src: "src/assets/img/cert-sec/cert-sec (14).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(1).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(2).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(3).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(4).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(5).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(6).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(7).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(8).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(9).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(10).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(11).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(12).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(13).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(14).webp", alt: "Carousel Image 1" },
 ];
 
 return (

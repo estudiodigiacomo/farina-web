@@ -25,6 +25,8 @@ const carouselImages = [
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(12).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(13).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(14).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(15).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(16).webp", alt: "Carousel Image 1" },
 ];
 
 return (

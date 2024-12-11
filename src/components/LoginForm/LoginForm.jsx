@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
       <div className="card p-4 shadow" style={{ maxWidth: "400px", width: "100%" }}>
-        <img src="src/assets/luciana-farina.webp" alt="logo-login" className="logo-login"/>
+        <img src="https://storage.googleapis.com/farina_img/luciana-farina.webp" alt="logo-login" className="logo-login"/>
         <h2 className="text-center mb-4">Iniciar Sesión</h2>
         {error && <div className="alert alert-danger text-center">{error}</div>}
         <form onSubmit={handleLogin}>

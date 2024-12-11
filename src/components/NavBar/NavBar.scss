@@ -47,6 +47,21 @@
       }
     }
 
+    .instagram-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      color: $secondary-color; 
+      transition: transform 0.3s ease, color 0.3s ease;
+    
+      &:hover {
+        color: $tertiary-color; 
+        transform: scale(1.1);
+      }
+    }
+
     .contact-link {
       background: none;
       border: none;

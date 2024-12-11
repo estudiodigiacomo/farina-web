@@ -1,0 +1,85 @@
+@import "../../utils/variables.scss";
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: $background-color;
+    box-shadow: 0 4px 10px $tertiary-color;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .contact-form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .contact-form-container input[type="text"],
+  .contact-form-container input[type="email"],
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form-container textarea {
+    min-height: 100px;
+    resize: none;
+  }
+  
+  .contact-form-container button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: $secondary-color;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form-container button:hover {
+    background-color: $tertiary-color;
+  }
+  
+  .contact-form-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: green;
+  }
+  
+  .contact-form-container p.error {
+    color: red;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 15px;
+    }
+  
+    .contact-form-container h2 {
+      font-size: 20px;
+    }
+  
+    .contact-form-container button {
+      font-size: 16px;
+    }
+  }
+  

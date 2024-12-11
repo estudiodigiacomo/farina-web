@@ -12,7 +12,7 @@ const CardsArea = () => {
     useEffect(() => {
         const fetchCards = async () => {
             try {
-                const cardsData = await getCards(); // Llama al servicio
+                const cardsData = await getCards();
                 setCards(cardsData);
             } catch (error) {
                 console.error("Error loading cards:", error);
@@ -24,7 +24,7 @@ const CardsArea = () => {
 
     const handleCardClick = (card) => {
         setSelectedCard(card);
-        setIsLoading(true); // Activa el loader antes de cargar la imagen
+        setIsLoading(true); 
         setIsModalOpen(true);
     };
 

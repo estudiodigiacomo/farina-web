@@ -28,7 +28,7 @@ return (
         <div className="contact-section">
         <p className="title">e-mail <FaEnvelope className="icon" /></p>
         <a href="mailto:example@example.com" className="email_link">
-            luciana@estudiofarina.com
+            estudio@lucianafarina.com
         </a>
         </div>
         <div className="contact-section">
@@ -52,7 +52,7 @@ return (
             target="_blank"
             rel="noopener noreferrer"
         >
-            Cdad. Autónoma de Buenos Aires, José Andrés Pacheco de Melo 2870 - Piso 3B
+            Ciudad Autónoma de Buenos Aires, José Andrés Pacheco de Melo 2870 - Piso 3B
         </a>
         </div>
     </div>

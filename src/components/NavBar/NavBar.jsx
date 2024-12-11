@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
+import { FaInstagram } from "react-icons/fa";
 import "./NavBar.scss";
 
 const Navbar = () => {
@@ -47,6 +48,15 @@ const Navbar = () => {
           <button onClick={scrollToContact} className="contact-link">
             Contacto
           </button>
+          {/* Ícono de Instagram */}
+          <a
+            href="https://www.instagram.com/farina_luciana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="instagram-link"
+          >
+            <FaInstagram className="instagram-icon" />
+          </a>
         </div>
 
         <button className="navbar-toggle" onClick={toggleMenu}>

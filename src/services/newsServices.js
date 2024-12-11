@@ -67,12 +67,12 @@ export const getNotice = async () => {
   };
   
   // Actualizar una noticia
-  export const updateNotice = async (id, title, content, imageUrl) => {
+  export const updateNotice = async (id, title, sections, imageUrl) => {
     try {
       const noticiaRef = doc(db, "news", id);
       await updateDoc(noticiaRef, {
         title: title,
-        content: content,
+        sections: sections,
         imageUrl: imageUrl,
       });
       console.log("Noticia actualizada con éxito!");

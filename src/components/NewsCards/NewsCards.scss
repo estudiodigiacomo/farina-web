@@ -161,11 +161,12 @@
     
         .action-icon {
           cursor: pointer;
-          color: $primary-color;
+          color: $tertiary-color;
           transition: color 0.3s ease, transform 0.2s ease;
+          margin-left: 2.5rem;
     
           &:hover {
-            color: darken($primary-color, 10%);
+            color: darken($secondary-color, 10%);
             transform: scale(1.1);
           }
         }

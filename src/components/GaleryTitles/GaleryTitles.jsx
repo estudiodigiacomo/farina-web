@@ -14,8 +14,6 @@ const galleryImages = [
 
 const carouselImages = [
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(1).webp", alt: "Carousel Image 1" },
-    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(2).webp", alt: "Carousel Image 1" },
-    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(3).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(4).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(5).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(6).webp", alt: "Carousel Image 1" },

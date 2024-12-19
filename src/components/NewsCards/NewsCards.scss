@@ -175,7 +175,7 @@
           color: red;
     
           &:hover {
-            color: darken(red, 10%);
+            color: darken(rgb(236, 177, 177), 10%);
           }
         }
       }

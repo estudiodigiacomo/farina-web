@@ -3,7 +3,7 @@ import { getNotice, deleteNotice } from "../../services/newsServices.js";
 import { FiEdit, FiTrash2 } from 'react-icons/fi';
 import './NewsCards.scss';
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/AuthContext.jsx";
 
 const NewsCards = () => {
   const [news, setNews] = useState([]);

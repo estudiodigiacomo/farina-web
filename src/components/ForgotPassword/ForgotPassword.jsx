@@ -14,9 +14,9 @@ const ForgotPassword = () => {
     setError("");
 
     try {
-      await resetPassword(email); // Llama al servicio de recuperación
+      await resetPassword(email);
       setMessage("Correo de recuperación enviado. Por favor, revisa tu bandeja.");
-      setTimeout(() => navigate("/login"), 5000); // Redirige a /login tras 5 segundos
+      setTimeout(() => navigate("/login"), 5000); 
     } catch (err) {
       setError("No se pudo enviar el correo. Verifica que el email sea correcto.");
     }

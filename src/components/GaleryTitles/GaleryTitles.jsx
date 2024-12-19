@@ -27,6 +27,14 @@ const carouselImages = [
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(14).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(15).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(16).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(17).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(18).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(19).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(20).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(21).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(22).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(23).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(24).webp", alt: "Carousel Image 1" },
 ];
 
 return (

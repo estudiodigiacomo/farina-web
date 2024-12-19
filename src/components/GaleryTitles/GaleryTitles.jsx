@@ -35,6 +35,11 @@ const carouselImages = [
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(22).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(23).webp", alt: "Carousel Image 1" },
     { src: "https://storage.googleapis.com/farina_img/cert-sec%20(24).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(25).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/cert-sec%20(26).webp", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/jpg-cert-sec%20(25).jpg", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/jpg-cert-sec%20(26).jpg", alt: "Carousel Image 1" },
+    { src: "https://storage.googleapis.com/farina_img/jpg-cert-sec%20(24).jpg", alt: "Carousel Image 1" },
 ];
 
 return (
